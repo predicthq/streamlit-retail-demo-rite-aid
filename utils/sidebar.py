@@ -8,21 +8,39 @@ from utils.code_examples import get_code_example
 def show_sidebar_options():
     locations = [
         {
-            "id": "chicago",
-            "name": "Chicago",
-            "address": "Chicago, Illinois",
-            "lat": 41.88691800264782,
-            "lon":  -87.62784085443968,
-            "tz": "America/Chicago",
+            "id": "new-york",
+            "name": "New York",
+            "address": "81 1st Ave., New York, New York",
+            "lat": 40.725767828379325,
+            "lon": -73.98707848465475,
+            "tz": "America/New_York",
             "units": "imperial",
         },
         {
-            "id": "new-york",
-            "name": "Soho",
-            "address": "Soho, New York",
-            "lat": 40.724879946382124,
-            "lon": -74.00263414797246,
+            "id": "pennsylvania",
+            "name": "Philadelphia",
+            "address": "1628-36 Chestnut St, Philadelphia, Pennsylvania",
+            "lat": 39.9512342012851,
+            "lon": -75.16841870054628,
             "tz": "America/New_York",
+            "units": "imperial",
+        },
+        {
+            "id": "massachusetts",
+            "name": "Revere",
+            "address": "467 Broadway, Revere, MA 02151, USA",
+            "lat": 42.41096839297862,
+            "lon": -71.0110623620475,
+            "tz": "America/New_York",
+            "units": "imperial",
+        },
+        {
+            "id": "california",
+            "name": "San Diego",
+            "address": "10631 Tierrasanta Blvd, San Diego, California",
+            "lat": 32.82112107998418,
+            "lon": -117.10156812666924,
+            "tz": "America/Los_Angeles",
             "units": "imperial",
         },
     ]
@@ -142,5 +160,5 @@ def show_map_sidebar_code_examples():
             st.markdown(get_code_example(example["filename"]))
 
     st.sidebar.caption(
-        "Get the code for this app at [GitHub](https://github.com/predicthq/streamlit-retail-demo)"
+        "Get the code for this app at [GitHub](https://github.com/predicthq/streamlit-retail-demo-rite-aid)"
     )

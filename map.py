@@ -47,7 +47,6 @@ def map():
         st.markdown("<img src='app/static/store-logo.png' width='160' />", unsafe_allow_html=True)
     
     with col2:
-        st.header("")
         st.header(location["address"])
     
 
